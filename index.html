@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-6 좌석 배치도</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <h1 class="title">2-6 좌석 배치도</h1>
+                    <p class="subtitle-3">새롭게 바뀌는 자리는 과연!!!!! </p>
+                    <button class="button is-primary" id="changeSeat">바꾸기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section seats">
+        <div class="container">
+            <div class="columns">
+                <div id="none" class="column"> </div>
+                <div id="boys" class="column"><span id="boyindex">3</span></div>
+                <div id="none" class="column"> </div>
+                <div id="boys" class="column"><span id="boyindex">6</span></div>
+                <div id="none" class="column"> </div>
+                <div id="none" class="column"> </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="columns">
+                <div id="boys" class="column"><span id="boyindex">1</span></div>
+                <div id="girls" class="column"><span id="girlindex">5</span></div>
+                <div id="boys" class="column"><span id="boyindex">4</span></div>
+                <div id="girls" class="column"><span id="girlindex">3</span></div>
+                <div id="boys" class="column"><span id="boyindex">7</span></div>
+                <div id="girls" class="column"><span id="girlindex">1</span></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="columns">
+                <div id="girls" class="column"><span id="girlindex">6</span></div>
+                <div id="boys" class="column"><span id="boyindex">2</span></div>
+                <div id="girls" class="column"><span id="girlindex">4</span></div>
+                <div id="boys" class="column"><span id="boyindex">5</span></div>
+                <div id="girls" class="column"><span id="girlindex">2</span></div>
+                <div id="boys" class="column"><span id="boyindex">8</span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-8">
+                    <button class="button is small" id="fixSeat">고정된자리로</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
