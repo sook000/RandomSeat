@@ -5,7 +5,7 @@ const boy = {
 }
 const girl = {
     index: document.querySelectorAll('#girlindex'),
-    count: 7,
+    count: 6,
     fixedArray: [1, 2, 3, 4, 5, 6]
 }
 const changeButton = document.querySelector('#changeSeat')
