@@ -1,3 +1,7 @@
+body {
+    text-align: center;
+}
+
 .seats .column {
     margin: 10px;
 }
@@ -5,7 +9,6 @@
 #boys {
     background-color: #569daf;
     border: 3px solid;
-    text-align: center;
     font-size: 2em;
 }
 

@@ -1,16 +1,23 @@
 const boy = {
     index: document.querySelectorAll('#boyindex'),
-    count: 8,
-    fixedArray: [1, 2, 3, 4, 5, 6, 7, 8]
+    count: 13,
+    fixedArray: function () {
+        array = []
+        for (let i = 0; i < 13; i++) {
+            array.push(i)
+        }
+        return array
+    }
 }
 const girl = {
     index: document.querySelectorAll('#girlindex'),
-    count: 6,
-    fixedArray: [1, 2, 3, 4, 5, 6]
+    count: 12,
+    fixedArray: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 }
 const changeButton = document.querySelector('#changeSeat')
 const fixButton = document.querySelector('#fixSeat')
 let isChange = true
+let isVisible = true
 
 function changeSeat() {
     for (gender of [boy, girl]) {
@@ -51,6 +58,16 @@ fixButton.addEventListener('click', function () {
     } else {
         isChange = true
         fixButton.textContent = '랜덤 자리 배치 중'
+    }
+})
+
+document.querySelector('h1').addEventListener('click', function () {
+    if (isVisible) {
+        fixButton.style.display = 'block'
+        isVisible = false
+    } else {
+        fixButton.style.display = 'none'
+        isVisible = true
     }
 })
 
