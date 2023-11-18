@@ -14,8 +14,24 @@
 <body>
     <section class="section">
         <div class="container">
-            <div class="columns">
-                <div class="column is-half is-offset-one-quarter">
+            <div class="columns is-mobile">
+                <!-- <div class="column is-3">
+                    <p class="subtitle-1"><b>설명서</b>
+                    <p></p>
+                    <div id="tocToggle"><span class="has-text-info">보이기</span></div>
+                    </p>
+                    <br>
+                    <p>
+                    <ol id="tocContent">
+                        <li>현재 남자는 1번부터 8번까지 8명, 여자는 1번부터 6번까지 6명</li>
+                        <li>맨 밑 하얀색 버튼은 누를 때마다 '랜덤 자리 배치 중', '고정된 자리 배치 중'이 번갈아 나타남</li>
+                        <li>'랜덤 자리 배치 중'일 때 바꾸기 버튼 누르면 현재 자리 랜덤으로 바뀜</li>
+                        <li>'고정된 자리 배치 중'에서는 바꾸기 버튼 눌러도 미리 설정된 자리로만 나옴</li>
+                        <li>'2-6 좌석 배치도' 제목을 클릭하면 하얀색 버튼 숨기기 가능: 학생 몰래 랜덤, 고정 좌석 배정 가능 </li>
+                    </ol>
+                    </p>
+                </div> -->
+                <div class="column is-half">
                     <div class="box">
                         <div>
                             <h1 id="h1" class="title is-1">2-6 좌석 배치도</h1>
@@ -35,7 +51,7 @@
 
     <section class="section seats">
         <div class="container">
-            <div class="columns">
+            <div class="columns is-mobile">
                 <div id="none" class="column"> </div>
                 <div id="none" class="column"> </div>
                 <div id="boys" class="column"><span id="boyindex">3</span></div>
@@ -45,7 +61,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="columns">
+            <div class="columns is-mobile">
                 <div id="girls" class="column"><span id="girlindex">1</span></div>
                 <div id="boys" class="column"><span id="boyindex">1</span></div>
                 <div id="girls" class="column"><span id="girlindex">5</span></div>
@@ -55,7 +71,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="columns">
+            <div class="columns is-mobile">
                 <div id="boys" class="column"><span id="boyindex">8</span></div>
                 <div id="girls" class="column"><span id="girlindex">6</span></div>
                 <div id="boys" class="column"><span id="boyindex">2</span></div>
@@ -65,7 +81,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="columns">
+            <div class="columns is-mobile">
                 <div id="girls" class="column"><span id="girlindex">1</span></div>
                 <div id="boys" class="column"><span id="boyindex">1</span></div>
                 <div id="girls" class="column"><span id="girlindex">5</span></div>
@@ -75,7 +91,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="columns">
+            <div class="columns is-mobile">
                 <div id="none" class="column"> </div>
                 <div id="girls" class="column"><span id="girlindex">6</span></div>
                 <div id="boys" class="column"><span id="boyindex">2</span></div>
@@ -88,7 +104,7 @@
 
     <section class="section">
         <div class="container">
-            <div class="columns">
+            <div class="columns is-mobile">
                 <div class="column is-half is-offset-8">
                     <button class="button is small" id="fixSeat">랜덤 자리 배치중</button>
                 </div>
@@ -98,7 +114,8 @@
 
 
 
-    <script src="app.js"></script>
+
 </body>
+<script src="app.js"></script>
 
 </html>

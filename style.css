@@ -2,6 +2,14 @@ body {
     text-align: center;
 }
 
+#tocToggle:hover {
+    text-decoration: underline;
+}
+
+#tocContent {
+    text-align: left
+}
+
 .seats .column {
     margin: 10px;
 }

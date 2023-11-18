@@ -18,6 +18,11 @@ const changeButton = document.querySelector('#changeSeat')
 const fixButton = document.querySelector('#fixSeat')
 let isChange = true
 let isVisible = true
+const tocContent = document.querySelector('tocContent')
+const tocToggle = document.querySelector('tocToggle')
+let tocVisible = true
+// const tocToggleView = document.querySelector('tocToggle').style.display
+
 
 function changeSeat() {
     for (gender of [boy, girl]) {
@@ -71,5 +76,16 @@ document.querySelector('h1').addEventListener('click', function () {
     }
 })
 
+// window.onload = function openCloseToc() {
+//     if (tocToggle.style.display === 'block') {
+//         tocToggle.style.display = 'none'
+//         tocToggle.textContent = '보이기'
+//     } else {
+//         tocContent.style.display = 'block'
+//         tocToggle.textContent = '숨기기'
+//     }
+// }
 
-
+// tocToggle.addEventListener('click', function () {
+//     openCloseToc()
+// })
