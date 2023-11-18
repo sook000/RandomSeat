@@ -47,10 +47,10 @@ changeButton.addEventListener('click', function () {
 fixButton.addEventListener('click', function () {
     if (isChange) {
         isChange = false
-        fixButton.textContent = '랜덤으로'
+        fixButton.textContent = '고정된 자리 배치 중'
     } else {
         isChange = true
-        fixButton.textContent = '고정된자리로'
+        fixButton.textContent = '랜덤 자리 배치 중'
     }
 })
 
